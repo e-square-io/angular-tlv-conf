@@ -925,23 +925,27 @@ footer {
         padding-top: 24px;
     }
 
-    button {
-        margin: 10px;
-        width: 24px;
-        height: 24px;
-        border-radius: 6px;
-        background: linear-gradient(
-            160.29deg,
-            #aa21f9 1.93%,
-            #f431d7 1.93%,
-            #eb0d7f 47.6%,
-            #e50040 95.92%
-        );
+    .facebook,
+    .linkedin,
+    .twitter {
+        display: inline-block;
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-self: center;
+        button {
+            width: 24px;
+            height: 24px;
+            margin: 5px;
+            border-radius: 6px;
+            background: linear-gradient(
+                160.29deg,
+                #aa21f9 1.93%,
+                #f431d7 1.93%,
+                #eb0d7f 47.6%,
+                #e50040 95.92%
+            );
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
