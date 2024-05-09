@@ -787,3 +787,129 @@ header {
         }
     }
 }
+
+#sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    .sponsors-container {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 827px;
+        height: 60px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 83px;
+    padding: 84px 76px 24px 76px;
+    background: rgba(8, 2, 29, 1);
+    color: white;
+
+    .upper-footer {
+        display: flex;
+        gap: 100px;
+
+        .company-logo {
+            &:hover {
+                animation: jello-horizontal 0.9s both;
+            }
+        }
+    }
+
+    .col1,
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .col-header {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+
+    .lower-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 24px;
+    }
+
+    button {
+        margin: 10px;
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        background: linear-gradient(
+            160.29deg,
+            #aa21f9 1.93%,
+            #f431d7 1.93%,
+            #eb0d7f 47.6%,
+            #e50040 95.92%
+        );
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 50px 20px; // Reduced padding for smaller screens
+
+        .upper-footer {
+            flex-direction: column; // Stack elements vertically
+            align-items: center; // Center-align the content
+            gap: 40px; // Reduced gap
+        }
+
+        .company-logo,
+        .col1,
+        .col2 {
+            display: flex;
+            width: 100%; // Allow each column to take full width
+            align-items: center; // Center-align the content
+            justify-content: center;
+        }
+
+        .col-header {
+            text-align: center; // Center-align column headers
+        }
+
+        a {
+            font-size: 16px; // Smaller font size for links
+        }
+
+        .lower-footer {
+            flex-direction: column; // Stack elements vertically
+            align-items: center; // Center-align the content
+            gap: 20px; // Add gap between elements
+            padding-top: 20px; // Reduce padding-top
+        }
+
+        button {
+            width: 20px; // Reduce button size
+            height: 20px; // Reduce button size
+        }
+    }
+}
