@@ -40,11 +40,12 @@ html {
     font-family: "Poppins";
     margin: 0;
     padding: 0;
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 header {
@@ -149,10 +150,14 @@ header {
             gap: 60px;
             height: 53px;
 
+            img {
+                width: 28px;
+            }
+
             .date-details {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 10px;
             }
 
             .separator {
@@ -163,7 +168,7 @@ header {
             .location-details {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 5px;
             }
         }
 
@@ -193,6 +198,65 @@ header {
                     height: 21px;
                     padding: 11.2px 22.39px;
                 }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        padding: 20px 0;
+
+        nav {
+            padding: 1rem 20px;
+            flex-direction: column;
+
+            .company-icon {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                padding: 2px 8px;
+                font-size: 16px;
+            }
+        }
+
+        .main-title-container {
+            margin-top: 10%;
+            margin-right: 0;
+        }
+
+        .main-title {
+            flex-direction: column;
+            align-items: center;
+
+            .title-logo-container {
+                flex-direction: column;
+            }
+
+            .title-logo-container h1 {
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .conf-details {
+                gap: 20px;
+
+                .date-details {
+                    gap: 10px;
+                }
+
+                .location-details {
+                    gap: 5px;
+                }
+            }
+
+            .logos-details {
+                gap: 10px;
             }
         }
     }
@@ -269,6 +333,46 @@ header {
         font-size: 18px;
         font-weight: 300;
         line-height: 28px;
+    }
+
+    @media (max-width: 768px) {
+        text-align: center;
+        margin-top: 50px;
+        gap: 20px;
+
+        h2 {
+            width: 90%;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        .information-container {
+            width: 90%;
+            gap: 20px;
+        }
+
+        .angular-tlv-information,
+        .conference-information {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 16px;
+        }
+
+        .information-content {
+            width: auto;
+            border-left: none;
+            padding-inline: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
     }
 }
 
@@ -539,9 +643,4 @@ header {
 #location {
     display: flex;
     justify-content: center;
-
-    .conf-location {
-        display: flex;
-        justify-content: center;
-    }
 }
