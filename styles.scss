@@ -918,9 +918,10 @@ footer {
 
   .upper-footer {
     display: flex;
-    gap: 100px;
+    gap: 150px;
 
     .company-logo {
+        align-self: center;
       &:hover {
         animation: jello-horizontal 0.9s both;
       }
