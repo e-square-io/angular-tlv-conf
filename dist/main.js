@@ -1,1 +1,0 @@
-(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){document.getElementById("hamburger-menu").addEventListener("click",(function(){document.getElementById("myLinks").classList.toggle("active"),this.classList.toggle("animate")}))}))})();
