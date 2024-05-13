@@ -1,3 +1,5 @@
+import './styles.scss';
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburger-menu");
 
