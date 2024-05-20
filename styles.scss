@@ -117,7 +117,7 @@ header {
     .company-icon {
       display: flex;
       align-items: center;
-      @media only screen and (max-width: 1920px) {
+      @media only screen and (max-width: 768px) {
         display: none;
       }
 
@@ -161,7 +161,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     gap: 40px;
 
     .title-logo-container {
@@ -291,7 +291,16 @@ header {
       }
 
       .conf-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
+        margin-bottom: 40px;
+        
+        h3 {
+          font-weight: 400;
+
+        }
 
         .date-details {
           gap: 10px;
@@ -304,6 +313,7 @@ header {
 
       .logos-details {
         gap: 10px;
+        margin-bottom: 40px;
       }
     }
   }
