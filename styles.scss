@@ -164,11 +164,6 @@ header {
     align-items: flex-start;
     gap: 40px;
 
-    @media only screen and (max-width: 1400) and (min-width: 769px) {
-      margin-left: 20px;
-    }
-
-
     .title-logo-container {
       display: flex;
       align-items: center;
@@ -301,10 +296,9 @@ header {
         align-items: center;
         gap: 10px;
         margin-bottom: 40px;
-        
+
         h3 {
           font-weight: 400;
-
         }
 
         .date-details {
@@ -320,6 +314,12 @@ header {
         gap: 10px;
         margin-bottom: 40px;
       }
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 850px) {
+    .main-title {
+      margin-left: 40px;
     }
   }
 }
