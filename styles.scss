@@ -161,8 +161,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
+
+    @media only screen and (max-width: 1400) and (min-width: 769px) {
+      margin-left: 20px;
+    }
+
 
     .title-logo-container {
       display: flex;
