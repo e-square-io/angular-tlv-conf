@@ -742,6 +742,7 @@ header {
 
     img {
       height: 100%;
+      border-radius: 50%;
     }
   }
 
@@ -758,30 +759,35 @@ header {
     grid-area: 1 / 1 / 2 / 4;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
   }
 
   .speakers-second-row {
     grid-area: 2 / 1 / 3 / 4;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
   }
 
   .speakers-third-row {
     grid-area: 3 / 1 / 3 / 4;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
   }
 
   .speakers-fourth-row {
     grid-area: 4 / 1 / 4 / 4;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
   }
 
   .speakers-fifth-row{
     grid-area: 5 / 1 / 5 / 4;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
   }
 
 
