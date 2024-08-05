@@ -749,7 +749,6 @@ header {
   .speakers-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     justify-items: center;
     grid-row-gap: 4rem;
     padding: 32px;
@@ -851,8 +850,7 @@ header {
       justify-items: center;
     }
 
-    .speakers-first-row,
-    .speakers-second-row {
+    .grid-row {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -887,7 +885,7 @@ header {
 
     h2 {
       font-size: 48px;
-      // line-height: 38px;
+      line-height: 38px;
     }
 
     .speakers-container {
@@ -897,8 +895,7 @@ header {
       justify-items: center;
     }
 
-    .speakers-first-row,
-    .speakers-second-row {
+    .grid-row {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -944,8 +941,7 @@ header {
       justify-items: center;
     }
 
-    .speakers-first-row,
-    .speakers-second-row {
+    .grid-row {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
