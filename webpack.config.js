@@ -9,7 +9,8 @@ module.exports = {
     main: "./main.js", // Entry point for index.html
     codeOfConduct: "./code-of-conduct.js", // Separate entry for code-of-conduct.html
     cancellationPolicy: "./cancellation-policy.js", // Separate entry for cancellation-policy.html
-    termsOfUse: "./terms-of-use.js" // Separate entry for terms-of-use.html
+    termsOfUse: "./terms-of-use.js", // Separate entry for terms-of-use.html
+    speakers: "./speakers.js" // Separate entry for speakers.html
   },
   output: {
     filename: "[name].js", // Output [name] allows different files for each entry point
@@ -47,6 +48,11 @@ module.exports = {
       template: "./terms-of-use.html",
       filename: "terms-of-use.html",
       chunks: ["termsOfUse"], // Include only the termsOfUse chunk
+    }),
+    new HtmlWebpackPlugin({
+      template: "./speakers.html",
+      filename: "speakers.html",
+      chunks: ["speakers"], // Include only the termsOfUse chunk
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css", // Output CSS file named after the entry point

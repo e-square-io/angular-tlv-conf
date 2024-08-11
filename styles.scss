@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -212,7 +212,7 @@ header {
         border-radius: 27.29px;
         height: 43px;
       }
-      .gdg-logo{
+      .gdg-logo {
         display: flex;
         align-items: center;
         border: 0.7px solid #ffffff;
@@ -223,7 +223,6 @@ header {
           // height: 15px;
           padding: 11.2px 22.39px;
         }
-
       }
       .esquare-logo {
         img {
@@ -452,7 +451,7 @@ header {
   padding: 64px 0 80px 0;
   background: linear-gradient(180deg, #e7f3ff 0%, #dde0ff 78.5%, #ffddef 100%);
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
@@ -527,7 +526,7 @@ header {
     }
   }
 
-  .ticket-amount{
+  .ticket-amount {
     text-align: center;
     font-size: 14px;
     height: 10px;
@@ -539,7 +538,7 @@ header {
     align-items: center;
     gap: 7px;
 
-    &.sold-out{
+    &.sold-out {
       text-decoration: line-through;
     }
 
@@ -565,7 +564,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    .sold-out-btn{
+    .sold-out-btn {
       width: 228px;
       height: 52px;
       display: flex;
@@ -574,9 +573,9 @@ header {
       align-items: center;
       gap: 10px;
       border-radius: 8px;
-      border: 2px solid #FFF;
+      border: 2px solid #fff;
       background: rgba(179, 179, 179, 0.75);
-      box-shadow: 0px 4px 31px 0px rgba(154, 179, 227, 0.30);
+      box-shadow: 0px 4px 31px 0px rgba(154, 179, 227, 0.3);
       backdrop-filter: blur(44.75px);
       color: #fff;
       text-align: center;
@@ -782,14 +781,12 @@ header {
     justify-content: space-around;
   }
 
-  .speakers-fifth-row{
+  .speakers-fifth-row {
     grid-area: 5 / 1 / 5 / 4;
     display: flex;
     gap: 1rem;
     justify-content: space-around;
   }
-
-
 
   .cfp {
     display: flex;
