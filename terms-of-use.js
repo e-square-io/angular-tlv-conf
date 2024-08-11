@@ -1,0 +1,1 @@
+import "./terms-of-use-styles.scss";
