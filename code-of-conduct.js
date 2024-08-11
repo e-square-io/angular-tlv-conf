@@ -1,0 +1,1 @@
+import "./code-of-conduct-styles.scss";
