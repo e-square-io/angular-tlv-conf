@@ -10,11 +10,12 @@ module.exports = {
     codeOfConduct: "./code-of-conduct.js", // Separate entry for code-of-conduct.html
     cancellationPolicy: "./cancellation-policy.js", // Separate entry for cancellation-policy.html
     termsOfUse: "./terms-of-use.js", // Separate entry for terms-of-use.html
-    speakers: "./speakers.js" // Separate entry for speakers.html
+    speakers: "./speakers.js", // Separate entry for speakers.html
   },
   output: {
     filename: "[name].js", // Output [name] allows different files for each entry point
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -69,5 +70,9 @@ module.exports = {
     port: 9000,
     open: true,
     hot: true,
+    historyApiFallback: {
+      index: "/index.html",
+      rewrites: [{ from: /^\/speakers\/.*$/, to: "/speakers.html" }],
+    },
   },
 };
