@@ -169,7 +169,7 @@ const speakersData = [
   {
     id: "Vojtech-Mašek",
     name: "Vojtech Mašek",
-    title: "Team lead @ Qwix framework | Google Developer Expert (GDE)",
+    title: "CTO @Flowup",
     bio: "",
     imageUrl: "/assets/speakers-highlight/vojtech.png",
     socialLinks: {
@@ -179,85 +179,16 @@ const speakersData = [
     },
     talkTitle: "“Can imports hurt your build speed & size?”",
     talkDescription:
-      "Organizing code into files is crucial. Once in files, you need to import. More files? Libs are becoming useful, but do you know what different export styles do to the bundle size? How do they affect performance? We are about to find out. Topics: import & export, ESM, CJS, barrel files, bundle-size, Nx libs Talks wraps up experience of bundle size optimization with file import structure organization and Nx libraries use-cases from import boundaries, avoiding cyclic dependencies to impact different export strategies on your bundles.",
+      "Organizing code into files is crucial. Once in files, you need to import. More files? Libs are becoming useful, but do you know what different export styles do to the bundle size? How do they affect performance? We are about to find out. <br><br>Topics: import & export, ESM, CJS, barrel files, bundle-size, Nx libs Talks wraps up experience of bundle size optimization with file import structure organization and Nx libraries use-cases from import boundaries, avoiding cyclic dependencies to impact different export strategies on your bundles.",
   },
 ];
 
-function renderSpeakerDetails(speaker) {
-  return `
-    <div id="${speaker.id}" class="speaker-page">
-      <div class="container">
-        <div class="left-side">
-          <img src="${speaker.imageUrl}" alt="${speaker.name}" />
-          <div class="social-media-links">
-            <a href="${speaker.socialLinks.linkedin}" target="_blank">
-              <img src="/assets/social-media/linkedin.png" alt="linkedin" />
-            </a>
-            <a href="${speaker.socialLinks.x}" target="_blank">
-              <img src="/assets/social-media/x.png" alt="X" />
-            </a>
-            <a href="${speaker.socialLinks.github}" target="_blank">
-              <img src="/assets/social-media/github.png" alt="github" />
-            </a>
-          </div>
-        </div>
-        <div class="right-side">
-          <section class="upper-section">
-            <div class="full-name">
-              <img src="/assets/microphone.png" alt="" />
-              <h1>${speaker.name}</h1>
-            </div>
-            <h2 class="title">${speaker.title}</h2>
-            <p class="information">${speaker.bio}</p>
-          </section>
-          <section class="lower-section">
-            <h2 class="subject-title">${speaker.talkTitle}</h2>
-            <p class="description">${speaker.talkDescription}</p>
-          </section>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-function renderPage(selectedSpeakerId) {
-  const container = document.querySelector(".speakers-container");
-
-  // Clear the container
-  container.innerHTML = "";
-
-  // Render the selected speaker's details first
-  if (selectedSpeakerId) {
-    const selectedSpeaker = speakersData.find(
-      (speaker) => speaker.id === selectedSpeakerId
-    );
-    if (selectedSpeaker) {
-      container.innerHTML += renderSpeakerDetails(selectedSpeaker);
-    }
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const url = new URL(window.location.href);
-  const pathSegments = url.pathname.split("/");
-  let selectedSpeakerId;
-
-  if (pathSegments.length > 2 && pathSegments[1] === "speakers") {
-    selectedSpeakerId = decodeURIComponent(pathSegments[2]);
-  }
-
-  renderPage(selectedSpeakerId);
-});
-
-function loadSpeakerDetails(event) {
-  // Get the speaker ID from the clicked element's data attribute
-  const speakerId = event.currentTarget.getAttribute("data-speaker");
-
+function renderSpeakerDetails(speakerId) {
   // Find the speaker object in the data array
   const speaker = speakersData.find((speaker) => speaker.id === speakerId);
 
   if (speaker) {
-    // Create the speaker details HTML
+    // Create the speaker details HTML with conditional rendering
     const speakerDetailsHTML = `
       <div id="${speaker.id}" class="speaker-page">
         <div class="container">
@@ -287,7 +218,13 @@ function loadSpeakerDetails(event) {
                 <img src="/assets/microphone.png" alt="Microphone" />
                 <h1>${speaker.name}</h1>
               </div>
-              <h2 class="title">${speaker.title} @ ${speaker.company}</h2>
+              ${
+                speaker.title
+                  ? `<h2 class="title">${speaker.title}${
+                      speaker.company ? ` @ ${speaker.company}` : ""
+                    }</h2>`
+                  : ""
+              }
               <p class="information">${speaker.bio}</p>
             </section>
             <section class="lower-section">
@@ -304,13 +241,48 @@ function loadSpeakerDetails(event) {
 
     // Clear the current speaker details and insert the new one
     container.innerHTML = speakerDetailsHTML;
-
-    // Optionally, update the URL without reloading the page
-    history.pushState({ speakerId: speaker.id }, "", `/speakers/${speaker.id}`);
   }
+}
+
+// Initial page load: Check if there's a speaker ID in the URL and load it
+document.addEventListener("DOMContentLoaded", () => {
+  const url = new URL(window.location.href);
+  const pathSegments = url.pathname.split("/");
+
+  if (pathSegments.length > 2 && pathSegments[1] === "speakers") {
+    const speakerId = decodeURIComponent(pathSegments[2]);
+    renderSpeakerDetails(speakerId);
+
+    // Add initial state to history stack
+    history.replaceState(
+      { speakerId: speakerId },
+      "",
+      `/speakers/${speakerId}`
+    );
+  }
+});
+
+function loadSpeakerDetails(event) {
+  // Get the speaker ID from the clicked element's data attribute
+  const speakerId = event.currentTarget.getAttribute("data-speaker");
+
+  // Update the URL and push the state to the history stack
+  history.pushState({ speakerId }, "", `/speakers/${speakerId}`);
+
+  // Render the speaker details
+  renderSpeakerDetails(speakerId);
 }
 
 // Add event listeners to each speaker element in the grid
 document.querySelectorAll(".speaker").forEach((speaker) => {
   speaker.addEventListener("click", loadSpeakerDetails);
+});
+
+// Handle the popstate event to render the correct speaker details when navigating back or forward
+window.addEventListener("popstate", (event) => {
+  const speakerId = event.state ? event.state.speakerId : null;
+
+  if (speakerId) {
+    renderSpeakerDetails(speakerId);
+  }
 });
