@@ -9,8 +9,8 @@ const speakersData = [
     imageUrl: "/assets/speakers-highlight/eliran.png",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/eliran-els/",
-      x: "",
-      github: "",
+      x: "https://x.com/eliraneliassy",
+      github: "https://github.com/eliraneliassy",
     },
     talkTitle: "“Angular Renaissance”",
     talkDescription: "TBA",
@@ -41,11 +41,11 @@ const speakersData = [
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/matan-shushan/",
       x: "https://twitter.com/matan_bs",
-      github: "",
+      github: "https://github.com/MatanShushan",
     },
     talkTitle: "“Angular Signals: The End of State Management Libraries?”",
     talkDescription:
-      "Dive into a fiery debate as two seasoned developers tackle the necessity of state management. Each will advocate for and against using state management libraries through three practical use cases. Witness their live demonstrations, hear their compelling arguments, and watch as they challenge each other's approaches. Which strategy will prove more efficient and simplify development? Join us for a battle over the best way to handle state—where only one philosophy can prevail!",
+      "Dive into a fiery debate as two seasoned developers tackle the necessity of state management. Each will advocate for and against using state management libraries through three practical use cases. Witness their live demonstrations, hear their compelling arguments, and watch as they challenge each other's approaches. Which strategy will prove more efficient and simplify development? Join us for a battle over the best way to handle state - where only one philosophy can prevail!",
   },
   {
     id: "Omer-Gronich",
@@ -55,12 +55,12 @@ const speakersData = [
     imageUrl: "/assets/speakers-highlight/omer.png",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/omer-gronich-6617a7202/",
-      x: "",
+      x: "https://x.com/OmerGronich",
       github: "https://github.com/OmerGronich",
     },
     talkTitle: "“Angular Signals: The End of State Management Libraries?”",
     talkDescription:
-      "Dive into a fiery debate as two seasoned developers tackle the necessity of state management. Each will advocate for and against using state management libraries through three practical use cases. Witness their live demonstrations, hear their compelling arguments, and watch as they challenge each other's approaches. Which strategy will prove more efficient and simplify development? Join us for a battle over the best way to handle state—where only one philosophy can prevail!",
+      "Dive into a fiery debate as two seasoned developers tackle the necessity of state management. Each will advocate for and against using state management libraries through three practical use cases. Witness their live demonstrations, hear their compelling arguments, and watch as they challenge each other's approaches. Which strategy will prove more efficient and simplify development? Join us for a battle over the best way to handle state - where only one philosophy can prevail!",
   },
   {
     id: "Tally-Barak",
@@ -70,7 +70,7 @@ const speakersData = [
     imageUrl: "/assets/speakers-highlight/tally.png",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/tallybarak/?originalSubdomain=il",
-      x: "",
+      x: "https://x.com/tallybarak",
       github: "https://tallybarak.com",
     },
     talkTitle: "“The Comedy of Errors - Advanced Playwrighting”",
@@ -86,7 +86,7 @@ const speakersData = [
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/ofir-sayag-37a723aa",
       x: "",
-      github: "",
+      github: "https://github.com/ofirsg",
     },
     talkTitle: "“Empower angular schematics with AI”",
     talkDescription:
@@ -159,9 +159,9 @@ const speakersData = [
     bio: "Shai Reznik is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.",
     imageUrl: "/assets/speakers-highlight/shai.png",
     socialLinks: {
-      linkedin: "",
-      x: "",
-      github: "",
+      linkedin: "https://www.linkedin.com/in/shaireznik/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=il",
+      x: "https://x.com/shai_reznik?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      github: "https://github.com/shairez",
     },
     talkTitle: "“Panel Discussion and Q&A”",
     talkDescription: "",
