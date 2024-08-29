@@ -7,12 +7,13 @@
   font-family: "Comfortaa";
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
+  width: 100%;
 }
 
 header {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +22,15 @@ header {
   background-image: url("assets/header-background.png");
   background-size: cover;
   padding: 20px;
+
+  @media only screen and (max-width: 768px) {
+    .title-logo-container h1 {
+      font-size: 2rem;
+    }
+    .conf-details h3 {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .title-logo-container {
@@ -92,8 +102,6 @@ header {
 }
 
 .speaker-page {
-  scroll-snap-align: start;
-  flex: 0 0 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,6 +112,11 @@ header {
   justify-content: center;
   gap: 2rem;
   padding: 4rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .left-side {
@@ -128,12 +141,19 @@ header {
       object-fit: cover;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 23rem;
+    }
+  }
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  max-width: 1000px;
 }
 
 .upper-section,
@@ -141,6 +161,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    li, p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .upper-section .full-name {
@@ -159,6 +186,10 @@ header {
 .title,
 .subject-title {
   font-size: 1.5rem;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    line-height: 2.5rem;
+  }
 }
 
 .subject-title {
@@ -174,13 +205,8 @@ li {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: none;  
 }
-
-
-
-
-
 
 #speakers {
   background: rgba(35, 18, 84, 1);

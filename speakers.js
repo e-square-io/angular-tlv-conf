@@ -2,6 +2,21 @@ import "./speakers-styles.scss";
 
 const speakersData = [
   {
+    id: "Mark-Thompson",
+    name: "Mark Thompson",
+    title: "Developer Advocate <br></br>Angular Core Team, Google",
+    bio: "Mark loves to teach and code.<br></br>His love for both of these disciplines has led to becoming an award winning university instructor and software engineer. He comes with a passion for creating meaningful learning experiences. With over a decade of developing solutions across the tech stack, Mark likes to use that experience to break down fear of technology and make challenging technical tipics more accessible. Lately, Mark has been spending time as a Developer Advocate at Google.",
+    imageUrl: "/assets/speakers-highlight/mark.png",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/marktechson/",
+      x: "https://x.com/marktechson?lang=en",
+      github: "https://github.com/MarkTechson",
+    },
+    talkTitle: "“Angular Team Q&A Session”",
+    talkDescription: "",
+  },
+
+  {
     id: "Eliran-Eliassy",
     name: "Eliran Eliassy",
     title: "Founder & CEO @ E-square.io | Google Developer Expert (GDE)",
@@ -159,7 +174,8 @@ const speakersData = [
     bio: "Shai Reznik is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.",
     imageUrl: "/assets/speakers-highlight/shai.png",
     socialLinks: {
-      linkedin: "https://www.linkedin.com/in/shaireznik/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=il",
+      linkedin:
+        "https://www.linkedin.com/in/shaireznik/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=il",
       x: "https://x.com/shai_reznik?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       github: "https://github.com/shairez",
     },
@@ -180,6 +196,22 @@ const speakersData = [
     talkTitle: "“Can imports hurt your build speed & size?”",
     talkDescription:
       "Organizing code into files is crucial. Once in files, you need to import. More files? Libs are becoming useful, but do you know what different export styles do to the bundle size? How do they affect performance? We are about to find out. <br><br>Topics: import & export, ESM, CJS, barrel files, bundle-size, Nx libs Talks wraps up experience of bundle size optimization with file import structure organization and Nx libraries use-cases from import boundaries, avoiding cyclic dependencies to impact different export strategies on your bundles.",
+  },
+  {
+    id: "Ran-Rosenmann",
+    name: "Ran Rosenmann",
+    title: "Frontend Tech Lead @ Atera",
+    bio: "Ran Rosenmann - is a passionate Frontend Tech Lead at Atera, with a deep-rooted love for programming that began at the age of 12 using GWBASIC under DOS. A dedicated frontend enthusiast since the early days of jQuery, they have mastered Angular, evolving from AngularJS to the latest version, making it their go-to framework for web development. With a keen interest in the synergy between nature and science, they enjoy exploring nature-inspired algorithms. Outside of work, they are a devoted spouse and parent, with a love for music and the great outdoors.",
+    imageUrl: "/assets/speakers-highlight/ran.png",
+    socialLinks: {
+      linkedin:
+        "https://www.linkedin.com/in/ran-rosenmann-a2507a34/?originalSubdomain=il",
+      x: "",
+      github: "https://github.com/novice3030",
+    },
+    talkTitle: "“Practical usage of defferable views”",
+    talkDescription:
+      "Join us for an in-depth exploration of Angular's Deferable Views, the latest groundbreaking innovation from the Angular team, second only to Signals. In this lecture, Ran Rosenmann, a seasoned Angular expert and Frontend Tech Lead at Atera, will dive into the mechanics of Deferable Views, demonstrating when and how to leverage this powerful feature for optimized UI rendering. Through detailed explanations and real-world examples, attendees will gain a comprehensive understanding of how Deferable Views can transform their web applications, making them more efficient and responsive. Whether you're an Angular novice or a seasoned developer, this session will provide valuable insights into one of Angular's most exciting new features.",
   },
 ];
 
@@ -271,6 +303,13 @@ function loadSpeakerDetails(event) {
 
   // Render the speaker details
   renderSpeakerDetails(speakerId);
+
+  // Smooth scroll to the top of the page
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
 
 // Add event listeners to each speaker element in the grid
