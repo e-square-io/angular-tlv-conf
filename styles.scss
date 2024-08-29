@@ -738,14 +738,18 @@ header {
     gap: 32px;
     width: 452px;
     height: 152px;
+    cursor: pointer;
 
     img {
-      height: 100%;
       border-radius: 50%;
+      &.tally {
+        width: 152px;
+        height: 152px;
+      }
     }
   }
 
-  .speakers-container {
+  .speakers-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -841,7 +845,7 @@ header {
       line-height: 40px;
     }
 
-    .speakers-container {
+    .speakers-grid {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
@@ -858,11 +862,17 @@ header {
       height: auto;
       padding: 10px;
       flex-direction: column;
+      align-items: center;
       gap: 15px;
 
       img {
         width: 100%;
         height: auto;
+
+        &.tally {
+          width: 286px;
+          height: 286px;
+        }
       }
     }
 
@@ -885,7 +895,7 @@ header {
       line-height: 38px;
     }
 
-    .speakers-container {
+    .speakers-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
@@ -931,7 +941,7 @@ header {
       line-height: 38px;
     }
 
-    .speakers-container {
+    .speakers-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
