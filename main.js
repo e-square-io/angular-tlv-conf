@@ -14,10 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.navigateToSpeaker = function (event) {
+  debugger
   const speakerElement = event.currentTarget;
   const speakerName = speakerElement.getAttribute("data-speaker");
   const encodedSpeakerName = encodeURIComponent(speakerName);
-  const url = `/speakers/${encodedSpeakerName}`;
+  const url = `/speakers.html?speaker=${encodedSpeakerName}`;
 
   // Redirect to the speaker's page in the same tab
   window.location.href = url;

@@ -279,17 +279,22 @@ function renderSpeakerDetails(speakerId) {
 // Initial page load: Check if there's a speaker ID in the URL and load it
 document.addEventListener("DOMContentLoaded", () => {
   const url = new URL(window.location.href);
-  const pathSegments = url.pathname.split("/");
 
-  if (pathSegments.length > 2 && pathSegments[1] === "speakers") {
-    const speakerId = decodeURIComponent(pathSegments[2]);
+
+  // const pathSegments = url.pathname.split("/");
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const speaker = urlParams.get('speaker');
+
+  if (speaker) {
+    const speakerId = speaker;
     renderSpeakerDetails(speakerId);
 
     // Add initial state to history stack
     history.replaceState(
       { speakerId: speakerId },
       "",
-      `/speakers/${speakerId}`
+      `/speakers?speaker=${speakerId}`
     );
   }
 });
@@ -299,7 +304,7 @@ function loadSpeakerDetails(event) {
   const speakerId = event.currentTarget.getAttribute("data-speaker");
 
   // Update the URL and push the state to the history stack
-  history.pushState({ speakerId }, "", `/speakers/${speakerId}`);
+  history.pushState({ speakerId }, "", `/speakers.html?speaker=${speakerId}`);
 
   // Render the speaker details
   renderSpeakerDetails(speakerId);
