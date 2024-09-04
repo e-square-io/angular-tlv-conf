@@ -13,22 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-let speakerTab = null;
-
 window.navigateToSpeaker = function (event) {
   const speakerElement = event.currentTarget;
   const speakerName = speakerElement.getAttribute("data-speaker");
   const encodedSpeakerName = encodeURIComponent(speakerName);
   const url = `/speakers/${encodedSpeakerName}`;
 
-  if (speakerTab && !speakerTab.closed) {
-    // If the tab is already open, navigate to the new speaker in the existing tab
-    speakerTab.location.href = url;
-    speakerTab.focus();
-  } else {
-    // Open a new tab if it's the first time or the previous tab was closed
-    speakerTab = window.open(url, "_blank");
-  }
+  // Redirect to the speaker's page in the same tab
+  window.location.href = url;
 };
 
 window.addEventListener("message", (event) => {
