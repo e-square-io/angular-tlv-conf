@@ -1180,6 +1180,91 @@ header {
   }
 }
 
+#schedule{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins";
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .table-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow-x: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .timetable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+
+  .timetable thead, .s-spot {
+    background-color: rgb(35, 18, 84) !important;
+    color: white;
+  }
+
+  .timetable th, .timetable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+    .session {
+      display: flex;
+      justify-content: space-between;
+       align-items: center;
+    }
+
+
+    .speaker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+      border-radius: 50%;
+      max-width: 5.6em;
+
+      margin: .5em .5em .5em .5em;
+      }
+
+      .company{
+        font-size: .700em;
+      }
+
+      .name{
+        font-size: .888em;
+      ;
+      }
+    }
+  }
+
+  .timetable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+}
+
+
 #sponsors {
   display: flex;
   flex-direction: column;

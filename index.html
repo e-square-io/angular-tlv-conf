@@ -1,716 +1,918 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1TPYX04YS"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-Q1TPYX04YS');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q1TPYX04YS');
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/favicon_io/favicon.ico"
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/favicon_io/favicon.ico"
     />
 
+
     <title>
-      Angular TLV Conference - The Biggest Angular Conference In Israel
+        Angular TLV Conference - The Biggest Angular Conference In Israel
     </title>
 
     <meta
-      name="description"
-      content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
+            name="description"
+            content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
     />
 
     <meta
-      property="og:title"
-      content="Angular TLV Conference - The Biggest Angular Conference In Israel"
+            property="og:title"
+            content="Angular TLV Conference - The Biggest Angular Conference In Israel"
     />
-    <meta property="og:url" content="https://angular-tlv.com/" />
+    <meta property="og:url" content="https://angular-tlv.com/"/>
     <meta
-      property="og:image"
-      content="https://angular-tlv.com/assets/angular-tlv-frame.png"
+            property="og:image"
+            content="https://angular-tlv.com/assets/angular-tlv-frame.png"
     />
-    <meta property="og:image:width" content="719" />
-    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="719"/>
+    <meta property="og:image:height" content="300"/>
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website"/>
     <meta
-      property="og:description"
-      content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
-    />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@e_square_io" />
-    <meta name="twitter:creator" content="@e_square_io" />
-    <meta
-      name="twitter:title"
-      content="Angular TLV Conference - The Biggest Angular Conference In Israel"
-    />
-    <meta
-      name="twitter:description"
-      content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
+            property="og:description"
+            content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
     />
 
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@e_square_io"/>
+    <meta name="twitter:creator" content="@e_square_io"/>
     <meta
-      name="twitter:image"
-      cntent="https://angular-tlv.com/assets/angular-tlv-frame.png"
+            name="twitter:title"
+            content="Angular TLV Conference - The Biggest Angular Conference In Israel"
+    />
+    <meta
+            name="twitter:description"
+            content="Angular TLV Conference - The Biggest Angular Conference In Israel. Powered by e-square.io, Angular TLV stands as the cornerstone of Israel's thriving Angular community. It is the primary gathering point for Angular enthusiasts, boasting unparalleled activity and engagement."
+    />
+
+    <meta
+            name="twitter:image"
+            cntent="https://angular-tlv.com/assets/angular-tlv-frame.png"
     />
 
     <!-- <link rel="stylesheet" href="./styles.css" /> -->
 
     <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKoxfns5F0cu93AwzUwHbndsqaGcK9dRM&callback=console.debug&loading=async&libraries=maps,marker&v=beta"
-      defer
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKoxfns5F0cu93AwzUwHbndsqaGcK9dRM&callback=console.debug&loading=async&libraries=maps,marker&v=beta"
+            defer
     ></script>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="video-overlay">
+<body>
+<header>
+    <div class="video-overlay">
         <video autoplay loop muted>
-          <source src="/assets/header-video-background.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+            <source src="/assets/header-video-background.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
         </video>
-      </div>
+    </div>
 
-      <nav>
+    <nav>
         <div class="company-icon">
-          <img src="assets/q.svg">
+            <img src="assets/q.svg">
         </div>
 
         <div class="hamburger-menu">
-          <svg class="hamburger-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
-            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-              <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-              <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-            </path>
-            <rect width="10" height="10" stroke="none">
-              <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-            </rect>
-            <rect width="10" height="10" stroke="none">
-              <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-              <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-            </rect>
-          </svg>
+            <svg class="hamburger-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee"
+                 stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                    <animate dur="0.2s" attributeName="d"
+                             values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                             begin="start.begin"/>
+                    <animate dur="0.2s" attributeName="d"
+                             values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                             begin="reverse.begin"/>
+                </path>
+                <rect width="10" height="10" stroke="none">
+                    <animate dur="2s" id="reverse" attributeName="width" begin="click"/>
+                </rect>
+                <rect width="10" height="10" stroke="none">
+                    <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click"/>
+                    <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin"/>
+                </rect>
+            </svg>
         </div>
 
         <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#Location">Location</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
         </ul>
-      </nav>
+    </nav>
 
-      <div class="main-title-container">
+    <div class="main-title-container">
         <section class="main-title">
-          <div class="title-logo-container">
-            <img src="./assets/tlv-header-logo.png" alt="tlv conf logo" />
-            <h1>Angular TLV Conf.</h1>
-          </div>
-
-          <div class="conf-details">
-            <div class="date-details">
-              <img src="/assets/clock.png" alt="small clock image" />
-              <h3>November 27th, 2024</h3>
+            <div class="title-logo-container">
+                <img src="./assets/tlv-header-logo.png" alt="tlv conf logo"/>
+                <h1>Angular TLV Conf.</h1>
             </div>
 
-            <div class="separator"></div>
+            <div class="conf-details">
+                <div class="date-details">
+                    <img src="/assets/clock.png" alt="small clock image"/>
+                    <h3>November 27th, 2024</h3>
+                </div>
 
-            <div class="location-details">
-              <img
-                src="./assets/pin-location.png"
-                alt="small pin location image"
-              />
-              <h3>Zappa, Tel Aviv</h3>
-            </div>
-          </div>
+                <div class="separator"></div>
 
-          <div class="logos-details">
-            <div class="esquare-logo">
-              <img src="./assets/esquare-logo.png" alt="e-square logo" />
-            </div>
-            <div class="google-logo">
-              <img src="./assets/google-logo.png" alt="google logo" />
-
-            </div>
-            <div class="gdg-logo">
-              <img src="./assets/gdglogo.png" alt="google logo" />
-
+                <div class="location-details">
+                    <img
+                            src="./assets/pin-location.png"
+                            alt="small pin location image"
+                    />
+                    <h3>Zappa, Tel Aviv</h3>
+                </div>
             </div>
 
-          </div>
+            <div class="logos-details">
+                <div class="esquare-logo">
+                    <img src="./assets/esquare-logo.png" alt="e-square logo"/>
+                </div>
+                <div class="google-logo">
+                    <img src="./assets/google-logo.png" alt="google logo"/>
+
+                </div>
+                <div class="gdg-logo">
+                    <img src="./assets/gdglogo.png" alt="google logo"/>
+
+                </div>
+
+            </div>
         </section>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-      <section id="about">
+<main>
+    <section id="about">
         <h2 class="conference-title">
-          The Biggest <span>Angular</span> Conference In Israel
+            The Biggest <span>Angular</span> Conference In Israel
         </h2>
 
         <div class="information-container">
-          <div class="angular-tlv-information">
-            <div class="logo">
-              <img src="./assets/tlv-header-logo.png" alt="tlv conf logo" />
+            <div class="angular-tlv-information">
+                <div class="logo">
+                    <img src="./assets/tlv-header-logo.png" alt="tlv conf logo"/>
+                </div>
+                <div class="information-content">
+                    <h3>Angular TLV</h3>
+                    <p>
+                        Powered by e-square.io, Angular TLV stands as the cornerstone of
+                        Israel's thriving Angular community. It is the primary gathering
+                        point for Angular enthusiasts, boasting unparalleled activity
+                        and engagement. Angular TLV conference is part of the Google GDG Devfest!
+                    </p>
+                </div>
             </div>
-            <div class="information-content">
-              <h3>Angular TLV</h3>
-              <p>
-                Powered by e-square.io, Angular TLV stands as the cornerstone of
-                Israel's thriving Angular community. It is the primary gathering
-                point for Angular enthusiasts, boasting unparalleled activity
-                and engagement. Angular TLV conference is part of the Google GDG Devfest!
-              </p>
+            <div class="conference-information">
+                <h3>The Conference</h3>
+                <p>
+                    This year we are excited to launch our first ever Angular
+                    conference Israel has ever seen. will feature a diverse lineup of
+                    speakers worldwide and interactive sessions, ensuring a unique
+                    experience. Join us for an exclusive day from our venue in Tel
+                    Aviv, full of networking opportunities and professional
+                    entertainment.
+                </p>
             </div>
-          </div>
-          <div class="conference-information">
-            <h3>The Conference</h3>
-            <p>
-              This year we are excited to launch our first ever Angular
-              conference Israel has ever seen. will feature a diverse lineup of
-              speakers worldwide and interactive sessions, ensuring a unique
-              experience. Join us for an exclusive day from our venue in Tel
-              Aviv, full of networking opportunities and professional
-              entertainment.
-            </p>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="tickets">
+    <section id="tickets">
         <div class="tickets-section-container">
-          <h2>Tickets & Pricing</h2>
+            <h2>Tickets & Pricing</h2>
 
-          <div class="tickets-container">
-            <a href="https://tickchak.co.il/63382" target="_blank">
-            <div class="ticket-wrapper">
-              <div class="ticket">
-                <div class="ticket-header early-bird-header">
+            <div class="tickets-container">
+                <a href="https://tickchak.co.il/63382" target="_blank">
+                    <div class="ticket-wrapper">
+                        <div class="ticket">
+                            <div class="ticket-header early-bird-header">
 
 
-                  <img src="assets/early-birds.svg">
-                </div>
+                                <img src="assets/early-birds.svg">
+                            </div>
 
-                <div class="ticket-amount">
-<!--                  Only 50 Available!-->
-                </div>
+                            <div class="ticket-amount">
+                                <!--                  Only 50 Available!-->
+                            </div>
 
-                <div class="ticket-price sold-out">
-                  <h3>600ILS</h3>
-                </div>
+                            <div class="ticket-price sold-out">
+                                <h3>600ILS</h3>
+                            </div>
 
-                <div class="pay-button">
-<!--                  <img src="assets/pay.svg">-->
-                      <div class="sold-out-btn">
-                        SOLD OUT
-                      </div>
-                </div>
-              </div>
+                            <div class="pay-button">
+                                <!--                  <img src="assets/pay.svg">-->
+                                <div class="sold-out-btn">
+                                    SOLD OUT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://tickchak.co.il/63382" target="_blank">
+
+                    <div class="ticket-wrapper">
+                        <div class="ticket">
+                            <div class="ticket-header early-bird-header">
+                                <!--                  <div class="recommended-ticket">-->
+                                <!--                    <img src="assets/recommened.svg">-->
+                                <!--                  </div>-->
+                                <img src="assets/regular.svg">
+                            </div>
+
+                            <div class="ticket-amount"></div>
+
+                            <div class="ticket-price sold-out">
+                                <h3>750ILS</h3>
+                            </div>
+
+
+                            <div class="pay-button">
+                                <!--                  <img src="assets/pay.svg">-->
+                                <div class="sold-out-btn">
+                                    SOLD OUT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+
+                <a href="https://tickchak.co.il/63382" target="_blank">
+
+                    <div class="ticket-wrapper">
+                        <div class="ticket">
+                            <div class="ticket-header last-header">
+                                <img src="assets/last.svg">
+                            </div>
+
+                            <div class="ticket-amount"></div>
+
+                            <div class="ticket-price">
+                                <h3>850ILS</h3>
+                            </div>
+
+                            <div class="pay-button">
+                                <img src="assets/pay.svg">
+                            </div>
+                        </div>
+                    </div>
             </div>
-          </a>
-
-          <a href="https://tickchak.co.il/63382" target="_blank">
-
-            <div class="ticket-wrapper">
-              <div class="ticket">
-                <div class="ticket-header early-bird-header">
-                  <div class="recommended-ticket">
-                    <img src="assets/recommened.svg">
-                  </div>
-                  <img src="assets/regular.svg">
-                </div>
-
-                <div class="ticket-amount"></div>
-
-                <div class="ticket-price">
-                  <h3>750ILS</h3>
-                </div>
-
-                <div class="pay-button">
-                  <img src="assets/pay.svg">
-                </div>
-              </div>
-            </div>
-
-          </a>
-
-          <a href="https://tickchak.co.il/63382" target="_blank">
-
-            <div class="ticket-wrapper">
-              <div class="ticket">
-                <div class="ticket-header last-header">
-                  <img src="assets/last.svg">
-                </div>
-
-                <div class="ticket-amount"></div>
-
-                <div class="ticket-price">
-                  <h3>850ILS</h3>
-                </div>
-
-                <div class="pay-button">
-                  <img src="assets/pay.svg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
+            </a>
 
         </div>
-      </section>
+    </section>
 
-      <section id="perks">
+    <section id="perks">
         <div class="perk1">
-          <img src="assets/perk1.svg">
+            <img src="assets/perk1.svg">
         </div>
         <div class="perk2">
-          <img src="assets/perk2.svg">
+            <img src="assets/perk2.svg">
         </div>
         <div class="perk3">
-          <img src="assets/perk3.svg">
+            <img src="assets/perk3.svg">
         </div>
-      </section>
+    </section>
 
-      <section id="speakers">
+    <section id="speakers">
         <h2>Our Speakers </h2>
 
+
         <div class="speakers-grid">
-           <div class="speakers-first-row grid-row">
-             <div class="speaker" data-speaker="Mark-Thompson" onclick="navigateToSpeaker(event)">
-               <img src="assets/speakers/mark.webp" alt="Mark Thompson" />
-               <div class="speaker-details">
-                 <div class="speaker-details-upper">
-                   <h4>Mark Thompson</h4>
-                   <h5>Developer Advocate</h5>
-                   <h5>Angular Core Team, Google</h5>
-                 </div>
-                 <p>
-                   “Angular TLV Keynotes”
-                 </p>
-               </div>
-             </div>
+            <div class="speakers-first-row grid-row">
 
-             <div class="speaker" data-speaker="Michael-Hladky" onclick="navigateToSpeaker(event)">
-               <img src="assets/speakers/michaelhadky.webp" alt="Michael Hladky" />
-               <div class="speaker-details">
-                 <div class="speaker-details-upper">
-                   <h4>Michael Hladky</h4>
-                   <h5>Founder & CEO, Angular GDE</h5>
-                   <h5>Push-Based</h5>
-                 </div>
-               </div>
-             </div>
-
-            <div class="speaker" data-speaker="Eliran-Eliassy" onclick="navigateToSpeaker(event)" >
-              <img src="assets/speakers/eliraneliassy.png" alt="Eliran Eliassy" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Eliran Eliassy</h4>
-                  <h5>Founder & CEO, Angular GDE</h5>
-                  <h5>e-square.io</h5>
+                <div class="speaker" data-speaker="Eliran-Eliassy" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/eliraneliassy.png" alt="Eliran Eliassy"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Eliran Eliassy</h4>
+                            <h5>Founder & CEO, Angular GDE</h5>
+                            <h5>e-square.io</h5>
+                        </div>
+                        <p>
+                            “Angular Renaissance”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “Angular Renaissance”
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="speakers-second-row grid-row">
-            <div class="speaker" data-speaker="Rainer-Hahnekamp" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/rainer.jpg" alt="Rainer Hahnekamp" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Rainer Hahnekamp</h4>
-                  <h5>Trainer & Consultant, Angular GDE</h5>
-                  <h5>Angular Architects</h5>
+
+                <div class="speaker" data-speaker="Shahar-Kazaz" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/shahar.jpg" alt="Mark Thompson"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Shahar Kazaz</h4>
+                            <h5>FrontEnd Infra Team Lead</h5>
+                            <h5>Coralogix</h5>
+                        </div>
+                        <p>
+                            “Exploring the Power of TanStack in Angular”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “Towards Modern Change Detection”
-                </p>
-              </div>
+
+                <div class="speaker" data-speaker="Shai-Reznik" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/shai.jpg" alt="Shai Reznik"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Shai Reznik</h4>
+                            <h5>Hirez.io, Angular GDE</h5>
+                            <h5>Q&A Panel</h5>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="speaker" data-speaker="Younes-Jaaidi" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/younes-marmicode-1024.jpg.jpeg" alt="Younes Jaaidi" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Younes Jaaidi</h4>
-                  <h5>Software Cook, Angular GDE</h5>
-                  <h5>Marmicode</h5>
+            <div class="speakers-second-row grid-row">
+
+
+                <div class="speaker" data-speaker="Omer-Gronich" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/omer.JPG" alt="Omer Gronich"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Omer Gronich</h4>
+                            <h5>Sr Staff Software Engineer</h5>
+                            <h5>Palo Alto Networks</h5>
+                        </div>
+                        <p>
+                            “Angular Signals: The End of State Management Libraries?”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “Fake it till you Mock it”
-                </p>
-              </div>
+
+                <div class="speaker" data-speaker="Matan-Shushan" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/Matan.jpeg" alt="Matan Shushan "/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Matan Shushan </h4>
+                            <h5>Principal Engineer</h5>
+                            <h5>Palo Alto Networks</h5>
+                        </div>
+                        <p>
+                            “Angular Signals: The End of State Management Libraries?”
+                        </p>
+                    </div>
+                </div>
+
+                <div class="speaker" data-speaker="Ran-Rosenmann" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/ran.jpeg" alt="Ran Rosenmann"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Ran Rosenmann</h4>
+                            <h5>Frontend tech lead</h5>
+                            <h5>Atera</h5>
+                        </div>
+                        <p>
+                            “Practical usage of deferrable views”
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="speaker" data-speaker="Shai-Reznik" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/shai.jpg" alt="Shai Reznik" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Shai Reznik</h4>
-                  <h5>Hirez.io, Angular GDE</h5>
-                  <h5>Q&A Panel</h5>
+            <div class="speakers-third-row grid-row">
+                <div class="speaker" data-speaker="Denis-Levkov" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/denis.jpeg" alt="Denis Levkov"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Denis Levkov</h4>
+                            <h5>FE Architect</h5>
+                            <h5>ZoomInfo</h5>
+                        </div>
+                        <p>
+                            “Mastering the Art of Ineffective Jest Testing in Angular”
+                        </p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="speakers-third-row grid-row">
-            <div class="speaker" data-speaker="Vojtech-Mašek" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/voj.png" alt="Vojtech Mašek" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Vojtech Mašek</h4>
-                  <h5>CTO, Angular GDE</h5>
-                  <h5>FlowUp</h5>
+                <div class="speaker" data-speaker="Ofir-Sayag" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/ofir.jpeg" alt="Ofir Sayag"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Ofir Sayag</h4>
+                            <h5>FE Guild Lead</h5>
+                            <h5>Hibob</h5>
+                        </div>
+                        <p>
+                            “Empower angular schematics with AI”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “Can imports hurt your build speed & size”
-                </p>
-              </div>
-            </div>
 
-            <div class="speaker" data-speaker="Ofir-Sayag" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/ofir.jpeg" alt="Ofir Sayag" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Ofir Sayag</h4>
-                  <h5>FE Guild Lead</h5>
-                  <h5>Hibob</h5>
+                <div class="speaker" data-speaker="Idan-Sharvit" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/idan.jpeg" alt="Idan Sharvit"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Idan Sharvit</h4>
+                            <h5>FE Developer</h5>
+                            <h5>e-square.io</h5>
+                        </div>
+                        <p>
+                            “The world of Hydration”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “Empower angular schematics with AI”
-                </p>
-              </div>
-            </div>
-
-            <div class="speaker" data-speaker="Idan-Sharvit" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/idan.jpeg" alt="Idan Sharvit" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Idan Sharvit</h4>
-                  <h5>FE Developer</h5>
-                  <h5>e-square.io</h5>
-                </div>
-                <p>
-                  “The world of Hydration”
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="speakers-fourth-row grid-row">
-            <div class="speaker" data-speaker="Matan-Shushan" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/Matan.jpeg" alt="Matan Shushan " />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Matan Shushan </h4>
-                  <h5>Principal Engineer</h5>
-                  <h5>Palo Alto Networks</h5>
-                </div>
-                <p>
-                  “Angular Signals: The End of State Management Libraries?”
-                </p>
-              </div>
             </div>
 
-            <div class="speaker" data-speaker="Omri-Bar-Zik" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/omeri.jpeg" alt="Omri Bar-Zik" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Omri Bar-Zik</h4>
-                  <h5>FrontEnd Infrastructure Developer</h5>
-                  <h5>Outbrain</h5>
+            <div class="speakers-fourth-row grid-row">
+
+
+                <div class="speaker" data-speaker="Omri-Bar-Zik" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/omeri.jpeg" alt="Omri Bar-Zik"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Omri Bar-Zik</h4>
+                            <h5>FrontEnd Infrastructure Developer</h5>
+                            <h5>Outbrain</h5>
+                        </div>
+                        <p>
+                            “NG WHAT? Make angular CLI work for you!”
+                        </p>
+                    </div>
                 </div>
-                <p>
-                  “NG WHAT? Make angular CLI work for you!”
-                </p>
-              </div>
+
+                <div class="speaker" data-speaker="Tally-Barak" onclick="navigateToSpeaker(event)">
+                    <img class="tally" src="assets/speakers/Tally-yoobic-color.jpg" alt="Tally Barak"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Tally Barak</h4>
+                            <h5>Developer</h5>
+                            <h5>Yoobic</h5>
+                        </div>
+                        <p>
+                            “The Comedy of Errors - Advanced Playwrighting”
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="speaker" data-speaker="Tally-Barak" onclick="navigateToSpeaker(event)">
-              <img class="tally" src="assets/speakers/Tally-yoobic-color.jpg" alt="Tally Barak" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Tally Barak</h4>
-                  <h5>Developer</h5>
-                  <h5>Yoobic</h5>
-                </div>
-                <p>
-                  “The Comedy of Errors - Advanced Playwrighting”
-                </p>
-              </div>
-            </div>
-          </div>
+            <div class="speakers-fifth-row grid-row">
 
-          <div class="speakers-fifth-row grid-row">
-            <div class="speaker" data-speaker="Omer-Gronich" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/omer.JPG" alt="Omer Gronich" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Omer Gronich</h4>
-                  <h5>Sr Staff Software Engineer</h5>
-                  <h5>Palo Alto Networks</h5>
-                </div>
-                <p>
-                  “Angular Signals: The End of State Management Libraries?”
-                </p>
-              </div>
             </div>
-
-            <div class="speaker" data-speaker="Ran-Rosenmann" onclick="navigateToSpeaker(event)">
-              <img src="assets/speakers/ran.jpeg" alt="Ran Rosenmann" />
-              <div class="speaker-details">
-                <div class="speaker-details-upper">
-                  <h4>Ran Rosenmann</h4>
-                  <h5>Frontend tech lead</h5>
-                  <h5>Atera</h5>
-                </div>
-                <p>
-                  “Practical usage of deferrable views”
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="location">
+    <section id="location">
         <div class="location-information">
-          <div class="location-text">
-            <div class="location-upper-section">
-              <div class="location-title">
-                <div class="venue-container">
-                  <img src="assets/venue.svg">
+            <div class="location-text">
+                <div class="location-upper-section">
+                    <div class="location-title">
+                        <div class="venue-container">
+                            <img src="assets/venue.svg">
+                        </div>
+                        <div class="title">
+                            <h1>Zappa Tel Aviv</h1>
+                        </div>
+                    </div>
+
+                    <div class="location-description">
+                        <p>
+                            Located in the Midtown Tel Aviv complex, In the beating heart
+                            and the main artery of central Tel Aviv next to the train
+                            station (Peace and the Arlozorov train). Zappa Tel Aviv is the
+                            largest and leading club in terms of sound, multimedia and
+                            lighting systems in Israel. Zappa hosts the best artists,
+                            performances and conferences from Israel and abroad.
+                        </p>
+                    </div>
                 </div>
-                <div class="title">
-                  <h1>Zappa Tel Aviv</h1>
+
+                <div class="location-lower-section">
+                    <div class="location-accessibility-description">
+                        <p>
+                            Zappa offers accessibility services such as: parking,
+                            designated seating areas, and tailored audio systems.
+                        </p>
+                    </div>
                 </div>
-              </div>
-
-              <div class="location-description">
-                <p>
-                  Located in the Midtown Tel Aviv complex, In the beating heart
-                  and the main artery of central Tel Aviv next to the train
-                  station (Peace and the Arlozorov train). Zappa Tel Aviv is the
-                  largest and leading club in terms of sound, multimedia and
-                  lighting systems in Israel. Zappa hosts the best artists,
-                  performances and conferences from Israel and abroad.
-                </p>
-              </div>
             </div>
 
-            <div class="location-lower-section">
-              <div class="location-accessibility-description">
-                <p>
-                  Zappa offers accessibility services such as: parking,
-                  designated seating areas, and tailored audio systems.
-                </p>
-              </div>
+            <div class="location-image-container">
+                <div class="company-icon">
+                    <img src="assets/location-q.svg">
+                </div>
+                <div class="location-image">
+                    <img src="./assets/location.png" alt="image of the location"/>
+                </div>
             </div>
-          </div>
-
-          <div class="location-image-container">
-            <div class="company-icon">
-              <img src="assets/location-q.svg">
-            </div>
-            <div class="location-image">
-              <img src="./assets/location.png" alt="image of the location" />
-            </div>
-          </div>
         </div>
 
         <div class="location-map">
-          <iframe
-            width="100%"
-            height="450"
-            style="border: 0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKoxfns5F0cu93AwzUwHbndsqaGcK9dRM
+            <iframe
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKoxfns5F0cu93AwzUwHbndsqaGcK9dRM
     &q=Zappa,Tel-Aviv+IL"
-          >
-          </iframe>
+            >
+            </iframe>
         </div>
-      </section>
+    </section>
 
-      <section id="sponsors">
+    <section id="schedule">
+
+
+        <h1>Schedule:</h1>
+
+        <div class="table-container">
+            <table class="timetable">
+                <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="s-spot">
+                    <td>08:00 - 09:00</td>
+                    <td>Registration and Welcome Coffee</td>
+                </tr>
+                <tr>
+                    <td>09:00 - 09:15</td>
+                    <td>
+                        <div class="session">
+                            Opening Remarks - MC + Angular Team Welcome
+                            <div class="speaker">
+                                <img src="assets/speakers/shai.jpg">
+                                <div class="name">Shai Reznik</div>
+                                <div class="company">Hirez.io</div>
+                            </div>
+
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>09:15 - 09:45</td>
+                    <td>
+                        <div class="session">
+                            Opening Keynote - What's new in v19
+                            <div class="speaker">
+                                <img src="assets/speakers/eliraneliassy.png">
+                                <div class="name">Eliran Eliassy</div>
+                                <div class="company">e-square.io</div>
+                            </div>
+
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td>09:45 - 10:15</td>
+
+                    <td>
+
+                        <div class="session">
+                            Exploring the Power of TanStack in Angular
+                            <div class="speaker">
+                                <img src="assets/speakers/shahar.jpg">
+                                <div class="name">Shahar Kazaz</div>
+                                <div class="company">Coralogix</div>
+                            </div>
+
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>10:15 - 10:45</td>
+                    <td>
+                        <div class="session">
+                            Angular Signals: The End of State Management Libraries?
+                            <div class="speaker">
+                                <img src="assets/speakers/Matan.jpeg">
+                                <div class="name">Matan Shushan</div>
+                                <div class="company">Palo Alto Networks</div>
+                                <img src="assets/speakers/omer.JPG">
+                                <div class="name">Omer Gronich</div>
+                                <div class="company">Palo Alto Networks</div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr class="s-spot">
+                    <td>10:45 - 11:15</td>
+                    <td>Morning Break</td>
+                </tr>
+                <tr>
+                    <td>11:15 - 11:45</td>
+                    <td>
+                        <div class="session">
+                            Empower angular schematics with AI
+                            <div class="speaker">
+
+                                <img src="assets/speakers/ofir.jpeg">
+                                <div class="name">Ofir Sayag</div>
+                                <div class="company">Hibob</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12:15 - 12:45</td>
+                    <td>
+                        <div class="session">
+                            SSR & Hydration
+                            <div class="speaker">
+
+                                <img src="assets/speakers/idan.jpeg">
+                                <div class="name">Idan Sharvit</div>
+                                <div class="company">e-square.io</div>
+                            </div>
+                        </div>
+                        </td>
+
+                </tr>
+                <tr class="s-spot">
+                    <td>12:45 - 14:00</td>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 14:30</td>
+                    <td>
+                        <div class="session">
+                            NG WHAT? Make angular CLI work for you!
+                            <div class="speaker">
+
+                                <img src="assets/speakers/omeri.jpeg">
+                                <div class="name">Omri Bar-Zik</div>
+                                <div class="company">Outbrain</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14:30 - 15:00</td>
+
+                    <td>
+                        <div class="session">
+                            Mastering the Art of Ineffective Jest Testing in Angular
+                            <div class="speaker">
+
+                                <img src="assets/speakers/denis.jpeg">
+                                <div class="name">Denis Levkov</div>
+                                <div class="company">ZoomInfo</div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="s-spot">
+                    <td>15:00 - 15:30</td>
+                    <td>Afternoon Break</td>
+                </tr>
+                <tr>
+                    <td>15:30 - 16:00</td>
+                    <td>
+                        <div class="session">
+                            The Comedy of Errors - Advanced Playwrighting
+                            <div class="speaker">
+
+                                <img src="assets/speakers/Tally-yoobic-color.jpg">
+                                <div class="name">Tally Barak</div>
+                                <div class="company">Yoobic</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:00 - 16:30</td>
+                    <td>
+                        <div class="session">
+                            Practical usage of deferrable views
+                            <div class="speaker">
+
+                                <img src="assets/speakers/ran.jpeg">
+                                <div class="name">Ran Rozman</div>
+                                <div class="company">Atera</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+<!--                <tr>-->
+<!--                    <td>16:30 - 17:00</td>-->
+<!--                    <td>-->
+<!--                        <div class="session">-->
+<!--                            ELAD?-->
+<!--                            <div class="speaker">-->
+
+<!--                                <img src="assets/speakers/ELAD?">-->
+<!--                                <div class="name">Elad Betzalel</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </td>-->
+<!--                </tr>-->
+                <tr class="s-spot">
+                    <td>16:30 - 17:00</td>
+                    <td>Closing Remarks and Announcements</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </section>
+
+    <section id="sponsors">
         <h1>Our Sponsors</h1>
 
         <h2>Platinum:</h2>
 
         <div class="images">
-          <img src="./assets/sponsors/e-square.png" width="80px" />
-          <img src="./assets/sponsors/jet.png" width="80px" />
-          <img src="./assets/sponsors/hibob.png" width="80px" />
+            <img src="./assets/sponsors/e-square.png" width="80px"/>
+            <img src="./assets/sponsors/jet.png" width="80px"/>
+            <img src="./assets/sponsors/hibob.png" width="80px"/>
+            <img src="./assets/sponsors/lsports-logo.svg" width="80px"/>
         </div>
 
         <h2>Silver Partners:</h2>
 
         <div class="images">
-          <img src="./assets/sponsors/atera.png" width="80px" />
-          <img src="./assets/sponsors/zoominfo.png" width="80px" />
-          <img src="./assets/sponsors/frontcast.jpg" width="50px" />
+            <img src="./assets/sponsors/atera.png" width="80px"/>
+            <img src="./assets/sponsors/zoominfo.png" width="80px"/>
+            <img src="./assets/sponsors/frontcast.jpg" width="50px"/>
 
         </div>
 
         <h2>Want to be a sponsor?</h2>
 
         <p>
-          <b>
-            Send an email to our
-            <a href="mailto:eden@e-square.io">Partnership Manager</a> for more
-            detials! <br /><br />
-            Or schedule a meeting with our team at
-            <a href="tel:+972547401616">+972-54-7401616</a>
-          </b>
+            <b>
+                Send an email to our
+                <a href="mailto:eden@e-square.io">Partnership Manager</a> for more
+                detials! <br/><br/>
+                Or schedule a meeting with our team at
+                <a href="tel:+972547401616">+972-54-7401616</a>
+            </b>
         </p>
 
         <div class="sponsors-container">
-          <p>
-            <b> Why you should be a sponsor? </b>
-            <br /><br />
-            With a focus on advanced topics tailored for those deeply engaged
-            with Angular, we offer sponsors a unique opportunity to be exposed
-            to more than 500 Professionals in one place ensuring that sponsors
-            connect with a highly relevant audience.
-          </p>
+            <p>
+                <b> Why you should be a sponsor? </b>
+                <br/><br/>
+                With a focus on advanced topics tailored for those deeply engaged
+                with Angular, we offer sponsors a unique opportunity to be exposed
+                to more than 500 Professionals in one place ensuring that sponsors
+                connect with a highly relevant audience.
+            </p>
 
-          <p>
-            <b>Company branding</b>
-            <br />
-            Showcase the company products and services to over 500 attendees
-            expected to join from across Israel and beyond and Present your
-            company branding at the heart of innovation and technology.
-            <br /><br />
+            <p>
+                <b>Company branding</b>
+                <br/>
+                Showcase the company products and services to over 500 attendees
+                expected to join from across Israel and beyond and Present your
+                company branding at the heart of innovation and technology.
+                <br/><br/>
 
-            <b>Talent Networking</b>
-            <br />
-            Engage with professional developers directly, establishing
-            meaningful connections and generating leads that can have a lasting
-            impact at your company. Be exposed to dozens of job seekers and
-            connect with potential employees.
+                <b>Talent Networking</b>
+                <br/>
+                Engage with professional developers directly, establishing
+                meaningful connections and generating leads that can have a lasting
+                impact at your company. Be exposed to dozens of job seekers and
+                connect with potential employees.
 
-            <br /><br />
+                <br/><br/>
 
-            <b>Building Angular</b>
-            Support the Angular community in Israel and contribute to the growth
-            and strength of the ecosystem. Join us in shaping the future of
-            Angular development and amplifying your brand presence within the
-            Angular community.
-          </p>
+                <b>Building Angular</b>
+                Support the Angular community in Israel and contribute to the growth
+                and strength of the ecosystem. Join us in shaping the future of
+                Angular development and amplifying your brand presence within the
+                Angular community.
+            </p>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer>
-      <div class="upper-footer">
+
+</main>
+
+<footer>
+    <div class="upper-footer">
         <div class="company-logo">
-          <a href="https://e-square.io">
-            <img src="assets/bigq.svg">
-          </a>
+            <a href="https://e-square.io">
+                <img src="assets/bigq.svg">
+            </a>
         </div>
         <div class="col1">
-          <a class="col-header">e-square.io</a>
-          <a href="#about">About</a>
-          <a href="https://www.meetup.com/angular-tlv/" target="_blank"
+            <a class="col-header">e-square.io</a>
+            <a href="#about">About</a>
+            <a href="https://www.meetup.com/angular-tlv/" target="_blank"
             >Angular TLV Meetup</a
-          >
-          <a href="#speakers">CFP</a>
-          <a href="speakers.html" target="_blank">Our Speakers</a>
+            >
+            <a href="#speakers">CFP</a>
+            <a href="speakers.html" target="_blank">Our Speakers</a>
         </div>
         <div class="col2">
-          <a class="col-header">Angular TLV Conference</a>
-          <a href="#tickets">Buy Ticket</a>
-          <a href="code-of-conduct.html" target="_blank">Code Of Conduct</a>
-          <a href="cancellation-policy.html" target="_blank">Cancellation Policy</a>
-          <a href="terms-of-use.html" target="_blank">Terms Of Use</a>
+            <a class="col-header">Angular TLV Conference</a>
+            <a href="#tickets">Buy Ticket</a>
+            <a href="code-of-conduct.html" target="_blank">Code Of Conduct</a>
+            <a href="cancellation-policy.html" target="_blank">Cancellation Policy</a>
+            <a href="terms-of-use.html" target="_blank">Terms Of Use</a>
         </div>
-      </div>
+    </div>
 
-      <div class="lower-footer">
+    <div class="lower-footer">
         <div class="company-rights-reserves">
-          © 2024 e-square. All rights reserved
+            © 2024 e-square. All rights reserved
         </div>
         <div class="social-media-buttons-container">
-          <a
-            class="facebook"
-            href="https://www.facebook.com/equareio"
-            target="_blank"
-          >
-            <button>
-              <svg
-                width="6"
-                height="12"
-                viewBox="0 0 6 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.44254 5.15966L5.30157 6.5533C5.29572 6.61689 5.26962 6.67581 5.22821 6.71888C5.18681 6.76195 5.13299 6.78617 5.07698 6.78693H3.80268L3.79631 10.9188C3.79674 10.9677 3.78027 11.0149 3.75046 11.0501C3.72066 11.0853 3.67991 11.1057 3.63702 11.1069H2.346C2.32453 11.107 2.30329 11.102 2.28353 11.0924C2.26378 11.0828 2.24593 11.0688 2.23105 11.0511C2.21617 11.0335 2.20458 11.0126 2.19696 10.9897C2.18934 10.9668 2.18585 10.9423 2.18671 10.9178V6.78693H1.23099C1.20097 6.78658 1.17131 6.77948 1.1437 6.76603C1.11608 6.75259 1.09106 6.73307 1.07006 6.70859C1.04905 6.68411 1.03248 6.65515 1.02128 6.62335C1.01009 6.59156 1.00449 6.55756 1.0048 6.5233L1.00002 5.12966C0.999601 5.09528 1.00512 5.06114 1.01626 5.02919C1.0274 4.99724 1.04394 4.96811 1.06495 4.94346C1.08595 4.9188 1.111 4.89912 1.13867 4.88552C1.16634 4.87192 1.19609 4.86468 1.22621 4.86421H2.18671V3.51875C2.18671 1.95693 2.99908 1.10693 4.19054 1.10693H5.16698C5.19717 1.10729 5.227 1.11444 5.25476 1.12799C5.28252 1.14153 5.30767 1.1612 5.32875 1.18586C5.34984 1.21053 5.36646 1.2397 5.37765 1.27171C5.38884 1.30371 5.39438 1.33793 5.39396 1.37239V2.54512C5.39438 2.57957 5.38884 2.61379 5.37765 2.6458C5.36646 2.67781 5.34984 2.70698 5.32875 2.73164C5.30767 2.7563 5.28252 2.77597 5.25476 2.78951C5.227 2.80306 5.19717 2.81021 5.16698 2.81057H4.56806C3.92055 2.81057 3.79472 3.17421 3.79472 3.69966V4.86421H5.21795C5.25031 4.86467 5.28223 4.87295 5.31159 4.8885C5.34096 4.90404 5.3671 4.92651 5.38832 4.95442C5.40953 4.98232 5.42533 5.01504 5.43468 5.05041C5.44402 5.08579 5.4467 5.12302 5.44254 5.15966Z"
-                  fill="white"
-                  stroke="white"
-                  stroke-width="0.5"
-                />
-              </svg>
-            </button>
-          </a>
-          <a
-            class="linkedin"
-            href="https://www.linkedin.com/company/e-square-io"
-            target="_blank"
-          >
-            <button>
-              <svg
-                width="12"
-                height="11"
-                viewBox="0 0 12 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.283943 3.31494H2.47644V10.1069H0.283943V3.31494ZM8.46805 3.24818C7.21366 3.24818 6.42652 3.91227 6.27915 4.3796V3.31494H3.81709C3.84944 3.88065 3.81709 10.1069 3.81709 10.1069H6.27915V6.4316C6.27915 6.2278 6.26837 6.02401 6.33306 5.87643C6.50199 5.46884 6.86501 5.04369 7.51917 5.04369C8.3746 5.04369 8.76278 5.67264 8.76278 6.59323V10.1069H11.25V6.3297C11.25 4.22499 10.028 3.24818 8.46805 3.24818ZM1.34065 0.106934C0.531947 0.106934 0 0.61642 0 1.28754C0 1.9446 0.513977 2.46463 1.30831 2.46463H1.32268C2.14576 2.46463 2.65974 1.9446 2.65974 1.28402C2.64896 0.616421 2.14936 0.106934 1.34065 0.106934Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </a>
-          <a
-            class="twitter"
-            href="https://twitter.com/e_square_io"
-            target="_blank"
-          >
-            <button>
-              <svg
-                width="12"
-                height="11"
-                viewBox="0 0 12 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 8.97302C1.08731 9.68937 2.38344 10.1069 3.77318 10.1069C8.30243 10.1069 10.7795 6.26244 10.7795 2.92551C10.7795 2.81392 10.7759 2.70593 10.7723 2.59793C11.2547 2.24156 11.6724 1.7988 12 1.29124C11.5608 1.49282 11.0855 1.62601 10.5851 1.68721C11.0927 1.37403 11.4851 0.880872 11.6688 0.290519C11.1935 0.578496 10.6679 0.790879 10.1026 0.90247C9.65616 0.412909 9.0153 0.106934 8.30603 0.106934C6.94869 0.106934 5.84338 1.23724 5.84338 2.63033C5.84338 2.82832 5.86498 3.0191 5.90819 3.20629C3.86318 3.10189 2.0486 2.09757 0.831682 0.567697C0.619261 0.942067 0.496849 1.37763 0.496849 1.83839C0.496849 2.71312 0.932493 3.48706 1.59136 3.94063C1.18812 3.92983 0.806481 3.81464 0.475247 3.62745V3.65985C0.475247 4.88375 1.32493 5.90247 2.45184 6.13645C2.24662 6.19405 2.027 6.22644 1.80378 6.22644C1.64536 6.22644 1.49055 6.21204 1.33933 6.18325C1.65257 7.18397 2.55986 7.91471 3.63996 7.93631C2.79748 8.61305 1.73537 9.01622 0.583257 9.01622C0.388837 9.00902 0.190819 8.99822 0 8.97302Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </a>
+            <a
+                    class="facebook"
+                    href="https://www.facebook.com/equareio"
+                    target="_blank"
+            >
+                <button>
+                    <svg
+                            width="6"
+                            height="12"
+                            viewBox="0 0 6 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M5.44254 5.15966L5.30157 6.5533C5.29572 6.61689 5.26962 6.67581 5.22821 6.71888C5.18681 6.76195 5.13299 6.78617 5.07698 6.78693H3.80268L3.79631 10.9188C3.79674 10.9677 3.78027 11.0149 3.75046 11.0501C3.72066 11.0853 3.67991 11.1057 3.63702 11.1069H2.346C2.32453 11.107 2.30329 11.102 2.28353 11.0924C2.26378 11.0828 2.24593 11.0688 2.23105 11.0511C2.21617 11.0335 2.20458 11.0126 2.19696 10.9897C2.18934 10.9668 2.18585 10.9423 2.18671 10.9178V6.78693H1.23099C1.20097 6.78658 1.17131 6.77948 1.1437 6.76603C1.11608 6.75259 1.09106 6.73307 1.07006 6.70859C1.04905 6.68411 1.03248 6.65515 1.02128 6.62335C1.01009 6.59156 1.00449 6.55756 1.0048 6.5233L1.00002 5.12966C0.999601 5.09528 1.00512 5.06114 1.01626 5.02919C1.0274 4.99724 1.04394 4.96811 1.06495 4.94346C1.08595 4.9188 1.111 4.89912 1.13867 4.88552C1.16634 4.87192 1.19609 4.86468 1.22621 4.86421H2.18671V3.51875C2.18671 1.95693 2.99908 1.10693 4.19054 1.10693H5.16698C5.19717 1.10729 5.227 1.11444 5.25476 1.12799C5.28252 1.14153 5.30767 1.1612 5.32875 1.18586C5.34984 1.21053 5.36646 1.2397 5.37765 1.27171C5.38884 1.30371 5.39438 1.33793 5.39396 1.37239V2.54512C5.39438 2.57957 5.38884 2.61379 5.37765 2.6458C5.36646 2.67781 5.34984 2.70698 5.32875 2.73164C5.30767 2.7563 5.28252 2.77597 5.25476 2.78951C5.227 2.80306 5.19717 2.81021 5.16698 2.81057H4.56806C3.92055 2.81057 3.79472 3.17421 3.79472 3.69966V4.86421H5.21795C5.25031 4.86467 5.28223 4.87295 5.31159 4.8885C5.34096 4.90404 5.3671 4.92651 5.38832 4.95442C5.40953 4.98232 5.42533 5.01504 5.43468 5.05041C5.44402 5.08579 5.4467 5.12302 5.44254 5.15966Z"
+                                fill="white"
+                                stroke="white"
+                                stroke-width="0.5"
+                        />
+                    </svg>
+                </button>
+            </a>
+            <a
+                    class="linkedin"
+                    href="https://www.linkedin.com/company/e-square-io"
+                    target="_blank"
+            >
+                <button>
+                    <svg
+                            width="12"
+                            height="11"
+                            viewBox="0 0 12 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M0.283943 3.31494H2.47644V10.1069H0.283943V3.31494ZM8.46805 3.24818C7.21366 3.24818 6.42652 3.91227 6.27915 4.3796V3.31494H3.81709C3.84944 3.88065 3.81709 10.1069 3.81709 10.1069H6.27915V6.4316C6.27915 6.2278 6.26837 6.02401 6.33306 5.87643C6.50199 5.46884 6.86501 5.04369 7.51917 5.04369C8.3746 5.04369 8.76278 5.67264 8.76278 6.59323V10.1069H11.25V6.3297C11.25 4.22499 10.028 3.24818 8.46805 3.24818ZM1.34065 0.106934C0.531947 0.106934 0 0.61642 0 1.28754C0 1.9446 0.513977 2.46463 1.30831 2.46463H1.32268C2.14576 2.46463 2.65974 1.9446 2.65974 1.28402C2.64896 0.616421 2.14936 0.106934 1.34065 0.106934Z"
+                                fill="white"
+                        />
+                    </svg>
+                </button>
+            </a>
+            <a
+                    class="twitter"
+                    href="https://twitter.com/e_square_io"
+                    target="_blank"
+            >
+                <button>
+                    <svg
+                            width="12"
+                            height="11"
+                            viewBox="0 0 12 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M0 8.97302C1.08731 9.68937 2.38344 10.1069 3.77318 10.1069C8.30243 10.1069 10.7795 6.26244 10.7795 2.92551C10.7795 2.81392 10.7759 2.70593 10.7723 2.59793C11.2547 2.24156 11.6724 1.7988 12 1.29124C11.5608 1.49282 11.0855 1.62601 10.5851 1.68721C11.0927 1.37403 11.4851 0.880872 11.6688 0.290519C11.1935 0.578496 10.6679 0.790879 10.1026 0.90247C9.65616 0.412909 9.0153 0.106934 8.30603 0.106934C6.94869 0.106934 5.84338 1.23724 5.84338 2.63033C5.84338 2.82832 5.86498 3.0191 5.90819 3.20629C3.86318 3.10189 2.0486 2.09757 0.831682 0.567697C0.619261 0.942067 0.496849 1.37763 0.496849 1.83839C0.496849 2.71312 0.932493 3.48706 1.59136 3.94063C1.18812 3.92983 0.806481 3.81464 0.475247 3.62745V3.65985C0.475247 4.88375 1.32493 5.90247 2.45184 6.13645C2.24662 6.19405 2.027 6.22644 1.80378 6.22644C1.64536 6.22644 1.49055 6.21204 1.33933 6.18325C1.65257 7.18397 2.55986 7.91471 3.63996 7.93631C2.79748 8.61305 1.73537 9.01622 0.583257 9.01622C0.388837 9.00902 0.190819 8.99822 0 8.97302Z"
+                                fill="white"
+                        />
+                    </svg>
+                </button>
+            </a>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>
