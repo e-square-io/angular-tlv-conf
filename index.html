@@ -272,6 +272,7 @@
 
                             <div class="ticket-price">
                                 <h3>850ILS</h3>
+                                <span>+VAT</span>
                             </div>
 
                             <div class="pay-button">
@@ -313,10 +314,46 @@
                             <h5>e-square.io</h5>
                         </div>
                         <p>
-                            “Angular Renaissance”
+                            "What's new in v19 - linkedSignals, resources, signals forms & router, new authoring format and more!"
                         </p>
                     </div>
                 </div>
+
+                <div class="speaker" data-speaker="Yonus-Jaaidi" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/younes-marmicode-1024.jpg.jpeg" alt="Younes Jaaidi"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Younes Jaaidi</h4>
+                            <h5>Software Cook, Coach & Teacher, GDE</h5>
+                            <h5>Marmicode</h5>
+                        </div>
+                        <p>
+                            Fake it till you mock it
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="speaker" data-speaker="Mark-Thompson" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/mark.webp" alt="Mark Thompson"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Mark Shompson</h4>
+                            <h5>Angular Core Team</h5>
+                            <h5>Google</h5>
+                        </div>
+                        <p>
+                            "Opening Keynotes - Angular Core Team Updates"
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="speakers-second-row grid-row">
 
 
                 <div class="speaker" data-speaker="Shahar-Kazaz" onclick="navigateToSpeaker(event)">
@@ -329,37 +366,6 @@
                         </div>
                         <p>
                             “Exploring the Power of TanStack in Angular”
-                        </p>
-                    </div>
-                </div>
-
-                <div class="speaker" data-speaker="Shai-Reznik" onclick="navigateToSpeaker(event)">
-                    <img src="assets/speakers/shai.jpg" alt="Shai Reznik"/>
-                    <div class="speaker-details">
-                        <div class="speaker-details-upper">
-                            <h4>Shai Reznik</h4>
-                            <h5>Hirez.io, Angular GDE</h5>
-                            <h5>Q&A Panel</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="speakers-second-row grid-row">
-
-
-                <div class="speaker" data-speaker="Omer-Gronich" onclick="navigateToSpeaker(event)">
-                    <img src="assets/speakers/omer.JPG" alt="Omer Gronich"/>
-                    <div class="speaker-details">
-                        <div class="speaker-details-upper">
-                            <h4>Omer Gronich</h4>
-                            <h5>Sr Staff Software Engineer</h5>
-                            <h5>Palo Alto Networks</h5>
-                        </div>
-                        <p>
-                            “Angular Signals: The End of State Management Libraries?”
                         </p>
                     </div>
                 </div>
@@ -469,6 +475,20 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="speaker" data-speaker="Omer-Gronich" onclick="navigateToSpeaker(event)">
+                    <img src="assets/speakers/omer.JPG" alt="Omer Gronich"/>
+                    <div class="speaker-details">
+                        <div class="speaker-details-upper">
+                            <h4>Omer Gronich</h4>
+                            <h5>Sr Staff Software Engineer</h5>
+                            <h5>Palo Alto Networks</h5>
+                        </div>
+                        <p>
+                            “Angular Signals: The End of State Management Libraries?”
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div class="speakers-fifth-row grid-row">
@@ -552,18 +572,35 @@
                 </thead>
                 <tbody>
                 <tr class="s-spot">
-                    <td>08:00 - 09:00</td>
+                    <td>08:00 - 09:15</td>
                     <td>Registration and Welcome Coffee</td>
                 </tr>
                 <tr>
-                    <td>09:00 - 09:15</td>
+                    <td>09:15 - 09:30</td>
                     <td>
                         <div class="session">
-                            Opening Remarks - MC + Angular Team Welcome
+                            Opening Remarks + MC intro
+<!--                            <div class="speaker">-->
+<!--                                <img src="assets/speakers/mark.webp">-->
+<!--                                <div class="name">Mark Thompson</div>-->
+<!--                                <div class="company">Angular Core Team, Google</div>-->
+<!--                            </div>-->
+
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>09:30 - 09:40</td>
+
+
+                    <td>
+                        <div class="session">
+                            Opening Keynotes - Angular Core Team Updates (Remote)
                             <div class="speaker">
-                                <img src="assets/speakers/shai.jpg">
-                                <div class="name">Shai Reznik</div>
-                                <div class="company">Hirez.io</div>
+                                <img src="assets/speakers/mark.webp">
+                                <div class="name">Mark Thompson</div>
+                                <div class="company">Angular Core Team <br>Google</div>
                             </div>
 
                         </div>
@@ -571,10 +608,12 @@
 
                 </tr>
                 <tr>
-                    <td>09:15 - 09:45</td>
+
+                    <td>09:40 - 10:10</td>
+
                     <td>
                         <div class="session">
-                            Opening Keynote - What's new in v19
+                            What's new in v19 - linkedSignals, resources, signals forms & router, new authoring format and more!
                             <div class="speaker">
                                 <img src="assets/speakers/eliraneliassy.png">
                                 <div class="name">Eliran Eliassy</div>
@@ -584,27 +623,33 @@
                         </div>
                     </td>
 
+
+
                 </tr>
                 <tr>
-
-                    <td>09:45 - 10:15</td>
+                    <td>10:10 - 10:40</td>
 
                     <td>
-
                         <div class="session">
-                            Exploring the Power of TanStack in Angular
+                            Fake it till you mock it
                             <div class="speaker">
-                                <img src="assets/speakers/shahar.jpg">
-                                <div class="name">Shahar Kazaz</div>
-                                <div class="company">Coralogix</div>
-                            </div>
 
+                                <img src="assets/speakers/younes-marmicode-1024.jpg.jpeg">
+                                <div class="name">Younes Jaaidi
+                                </div>
+                                <div class="company">Marmicode</div>
+                            </div>
                         </div>
                     </td>
 
                 </tr>
+                <tr class="s-spot">
+                    <td>10:40 - 11:15</td>
+                    <td>Morning Break</td>
+                </tr>
                 <tr>
-                    <td>10:15 - 10:45</td>
+                    <td>11:15 - 11:45</td>
+
                     <td>
                         <div class="session">
                             Angular Signals: The End of State Management Libraries?
@@ -623,13 +668,12 @@
 
 
                     </td>
+
                 </tr>
-                <tr class="s-spot">
-                    <td>10:45 - 11:15</td>
-                    <td>Morning Break</td>
-                </tr>
+
                 <tr>
-                    <td>11:15 - 11:45</td>
+                    <td>11:45 - 12:15</td>
+
                     <td>
                         <div class="session">
                             Empower angular schematics with AI
@@ -641,6 +685,7 @@
                             </div>
                         </div>
                     </td>
+
                 </tr>
                 <tr>
                     <td>12:15 - 12:45</td>
@@ -663,17 +708,21 @@
                 </tr>
                 <tr>
                     <td>14:00 - 14:30</td>
-                    <td>
-                        <div class="session">
-                            NG WHAT? Make angular CLI work for you!
-                            <div class="speaker">
 
-                                <img src="assets/speakers/omeri.jpeg">
-                                <div class="name">Omri Bar-Zik</div>
-                                <div class="company">Outbrain</div>
+                    <td>
+
+                        <div class="session">
+                            Exploring the Power of TanStack in Angular
+                            <div class="speaker">
+                                <img src="assets/speakers/shahar.jpg">
+                                <div class="name">Shahar Kazaz</div>
+                                <div class="company">Coralogix</div>
                             </div>
+
                         </div>
                     </td>
+
+
                 </tr>
                 <tr>
                     <td>14:30 - 15:00</td>
@@ -691,12 +740,8 @@
                     </td>
 
                 </tr>
-                <tr class="s-spot">
+                <tr >
                     <td>15:00 - 15:30</td>
-                    <td>Afternoon Break</td>
-                </tr>
-                <tr>
-                    <td>15:30 - 16:00</td>
                     <td>
                         <div class="session">
                             The Comedy of Errors - Advanced Playwrighting
@@ -708,6 +753,13 @@
                             </div>
                         </div>
                     </td>
+
+                </tr>
+                <tr class="s-spot">
+                    <td>15:30 - 16:00</td>
+
+                    <td>Afternoon Break</td>
+
                 </tr>
                 <tr>
                     <td>16:00 - 16:30</td>
@@ -723,22 +775,25 @@
                         </div>
                     </td>
                 </tr>
-<!--                <tr>-->
-<!--                    <td>16:30 - 17:00</td>-->
-<!--                    <td>-->
-<!--                        <div class="session">-->
-<!--                            ELAD?-->
-<!--                            <div class="speaker">-->
-
-<!--                                <img src="assets/speakers/ELAD?">-->
-<!--                                <div class="name">Elad Betzalel</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </td>-->
-<!--                </tr>-->
-                <tr class="s-spot">
+                <tr>
                     <td>16:30 - 17:00</td>
-                    <td>Closing Remarks and Announcements</td>
+
+                    <td>
+                        <div class="session">
+                            NG WHAT? Make angular CLI work for you!
+                            <div class="speaker">
+
+                                <img src="assets/speakers/omeri.jpeg">
+                                <div class="name">Omri Bar-Zik</div>
+                                <div class="company">Outbrain</div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="s-spot">
+                    <td>17:00 - 18:00</td>
+                    <td>Movie Time! - Angular Documentary Film - Pre Release Show!</td>
                 </tr>
                 </tbody>
             </table>
@@ -756,15 +811,17 @@
             <img src="./assets/sponsors/e-square.png" width="80px"/>
             <img src="./assets/sponsors/jet.png" width="80px"/>
             <img src="./assets/sponsors/hibob.png" width="80px"/>
-            <img src="./assets/sponsors/lsports-logo.svg" width="80px"/>
+
         </div>
 
         <h2>Silver Partners:</h2>
 
         <div class="images">
+            <img src="./assets/sponsors/lsports-logo.svg" width="80px"/>
             <img src="./assets/sponsors/atera.png" width="80px"/>
             <img src="./assets/sponsors/zoominfo.png" width="80px"/>
-            <img src="./assets/sponsors/frontcast.jpg" width="50px"/>
+            <img src="./assets/sponsors/Varonis_Logo_Black.svg" width="80px"/>
+            <img src="./assets/sponsors/frontcast.jpg" width="30px"/>
 
         </div>
 

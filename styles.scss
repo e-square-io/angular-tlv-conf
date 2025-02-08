@@ -1205,7 +1205,7 @@ header {
 
   .table-container {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     overflow-x: auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -1248,6 +1248,7 @@ header {
 
       .company{
         font-size: .700em;
+        text-align:center
       }
 
       .name{
