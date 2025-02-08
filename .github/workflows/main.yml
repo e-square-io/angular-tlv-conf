@@ -13,17 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js and pnpm
+      - name: Set up Node.js and npm
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       
 
-      - name: Install dependencies with pnpm
+      - name: Install dependencies with npm
         run: npm ci
 
-      - name: Build project with pnpm
+      - name: Build project with npm
         run: npm run build
 
       - name: Deploy to S3
