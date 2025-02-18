@@ -108,11 +108,18 @@ header {
       linear-gradient(90deg, rgba(0, 0, 0, 0.2) 38.15%, rgba(0, 0, 0, 0) 100%);
   }
 
+  .habima{
+    position: absolute; bottom: 0px; right: 0;
+
+
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 75px;
+
 
     .company-icon {
       display: flex;
@@ -245,9 +252,14 @@ header {
     height: auto;
     padding-block-end: 20px;
 
+    .habima{
+      max-height: 80%;
+    }
+
     nav {
       padding: 1rem 20px;
       flex-direction: column;
+
 
       .company-icon {
         padding: 1rem 0 2rem 0;
@@ -727,6 +739,52 @@ header {
   padding: 70px 0px 100px 0px;
   text-align: center;
 
+  .apply-to-speak-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    background: color-mix(in srgb, oklch(80% .277 332.77), white 10%);
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 60, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 20px;
+  }
+
+  .apply-to-speak-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+    transition: all 0.3s ease-out;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .apply-to-speak-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .apply-to-speak-btn:hover {
+    box-shadow: 0 0 20px rgba(255, 60, 0, 0.7);
+    transform: scale(1.05);
+  }
+
+  .apply-to-speak-btn:active {
+    transform: scale(0.95);
+  }
+
+
   h2 {
     text-align: center;
     font-size: 50px;
@@ -734,6 +792,8 @@ header {
     line-height: 60px;
     margin-bottom: 3rem;
   }
+
+
 
   .speaker {
     display: flex;
