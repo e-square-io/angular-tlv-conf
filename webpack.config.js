@@ -11,6 +11,7 @@ module.exports = {
     cancellationPolicy: "./cancellation-policy.js", // Separate entry for cancellation-policy.html
     termsOfUse: "./terms-of-use.js", // Separate entry for terms-of-use.html
     speakers: "./speakers.js", // Separate entry for speakers.html
+    conferenceSchedule: "./conference-schedule.js",
   },
   output: {
     filename: "[name].js", // Output [name] allows different files for each entry point
@@ -54,6 +55,11 @@ module.exports = {
       template: "./speakers.html",
       filename: "speakers.html",
       chunks: ["speakers"], // Include only the termsOfUse chunk
+    }),
+    new HtmlWebpackPlugin({
+      template: "./conference-schedule.html",
+      filename: "conference-schedule.html",
+      chunks: ["conferenceSchedule"],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css", // Output CSS file named after the entry point
